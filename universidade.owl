@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/t-gamer/ontologies/2018/8/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/t-gamer/ontologies/2018/8/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/t-gamer/ontologies/2018/8/untitled-ontology-2#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="#Marco_Túlio_Macedo_Gonçalves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aluno_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ontologia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Nome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pessoa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Estudante"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Idade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aluno_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prof_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aluno_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prof_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prof_2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Matrícula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Sexo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estuda"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estudada_por"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gestão"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ensinada_por"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disciplina"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ensina"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Telefone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Endereço"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Turno"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Estudante"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gestão"/>
+        <Class IRI="#Disciplina"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ontologia"/>
+        <Class IRI="#Disciplina"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Estudante"/>
+        <Class IRI="#Gestão"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Estudante"/>
+        <Class IRI="#Ontologia"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Estudante"/>
+        <Class IRI="#Professor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Gestão"/>
+        <Class IRI="#Ontologia"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Gestão"/>
+        <Class IRI="#Professor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ontologia"/>
+        <Class IRI="#Professor"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Estudante"/>
+        <NamedIndividual IRI="#Aluno_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Estudante"/>
+        <NamedIndividual IRI="#Aluno_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Estudante"/>
+        <NamedIndividual IRI="#Aluno_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Estudante"/>
+        <NamedIndividual IRI="#Marco_Túlio_Macedo_Gonçalves"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professor"/>
+        <NamedIndividual IRI="#Prof_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professor"/>
+        <NamedIndividual IRI="#Prof_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professor"/>
+        <NamedIndividual IRI="#Prof_3"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Marco_Túlio_Macedo_Gonçalves"/>
+        <NamedIndividual IRI="#Prof_3"/>
+    </DifferentIndividuals>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Turno"/>
+        <NamedIndividual IRI="#Aluno_1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">noite</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Idade"/>
+        <NamedIndividual IRI="#Aluno_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Endereço"/>
+        <NamedIndividual IRI="#Aluno_3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rua arroba, numero 12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Matrícula"/>
+        <NamedIndividual IRI="#Aluno_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15312562165</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nome"/>
+        <NamedIndividual IRI="#Aluno_3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Um</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sexo"/>
+        <NamedIndividual IRI="#Aluno_3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Endereço"/>
+        <NamedIndividual IRI="#Marco_Túlio_Macedo_Gonçalves"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rua rua, numero x, bairro bairro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Idade"/>
+        <NamedIndividual IRI="#Marco_Túlio_Macedo_Gonçalves"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Matrícula"/>
+        <NamedIndividual IRI="#Marco_Túlio_Macedo_Gonçalves"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2015089254</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nome"/>
+        <NamedIndividual IRI="#Marco_Túlio_Macedo_Gonçalves"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Marco Túlio Macedo Gonçalves</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sexo"/>
+        <NamedIndividual IRI="#Marco_Túlio_Macedo_Gonçalves"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Telefone"/>
+        <NamedIndividual IRI="#Marco_Túlio_Macedo_Gonçalves"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">99999-9999</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Turno"/>
+        <NamedIndividual IRI="#Marco_Túlio_Macedo_Gonçalves"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Manhã</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Matrícula"/>
+        <NamedIndividual IRI="#Prof_3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">teste</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#ensina"/>
+        <ObjectProperty IRI="#ensinada_por"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#estuda"/>
+        <ObjectProperty IRI="#estudada_por"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ensina"/>
+        <Class IRI="#Professor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ensinada_por"/>
+        <Class IRI="#Disciplina"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estuda"/>
+        <Class IRI="#Estudante"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estudada_por"/>
+        <Class IRI="#Disciplina"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ensina"/>
+        <Class IRI="#Disciplina"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ensinada_por"/>
+        <Class IRI="#Professor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estuda"/>
+        <Class IRI="#Disciplina"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estudada_por"/>
+        <Class IRI="#Estudante"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Matrícula"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Endereço"/>
+        <Class IRI="#Disciplina"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Endereço"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Idade"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Matrícula"/>
+        <Class IRI="#Estudante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nome"/>
+        <Class IRI="#Disciplina"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nome"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Sexo"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Telefone"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Turno"/>
+        <Class IRI="#Disciplina"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Turno"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Endereço"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Idade"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Matrícula"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Nome"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Sexo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Telefone"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Turno"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Marco_Túlio_Macedo_Gonçalves</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">testestessteste</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
